@@ -1,0 +1,16 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+bin/
+
+# generated protobuf bindings
+*.pb.go
+
+# Test binary, build with `go test -c`
+*.test
+
+# Jetbrains IDEA stuff
+.idea/
+*.iml

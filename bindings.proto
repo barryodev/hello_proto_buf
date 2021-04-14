@@ -1,0 +1,17 @@
+syntax = "proto3";
+package main;
+
+option go_package = "github.com/barryodev/hello_proto_buf/main";
+
+// protoc command to generate bindings
+// protoc --go_out=paths=source_relative:. -I. bindings.proto
+
+message point {
+    int32 x = 1;
+    int32 y = 2;
+}
+
+message pixel {
+    point location = 1;
+    string colour = 2;
+}
